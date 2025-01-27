@@ -1,0 +1,66 @@
+.game {
+  width: 90px;
+  height: 90px;
+  border: 2px solid black;
+
+  position: relative;
+}
+
+.game__field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game__cell {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 0.5px dashed black;
+}
+
+.game__player {
+  height: 20px;
+  width: 20px;
+  background-color: #231d1d;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 5px;
+}
+
+.game__player--red {
+  background-color: red;
+}
+
+.game__player--green {
+  background-color: rgb(13, 155, 27);
+}
+
+.game__player--blue {
+  background-color: rgb(25, 22, 207);
+}
+
+.game__player--x-1 {
+  left: 5px;
+}
+
+.game__player--x-2 {
+  left: 35px;
+}
+
+.game__player--x-3 {
+  left: 65px;
+}
+
+
+.game__player--y-1 {
+  top: 5px;
+}
+
+.game__player--y-2 {
+  top: 35px;
+}
+
+.game__player--y-3 {
+  top: 65px;
+}
