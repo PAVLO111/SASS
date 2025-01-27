@@ -1,7 +1,7 @@
 .game {
-  --cell-size: 30px;
-  --player-size: 20px;
-  --shift: 5px;
+  --cell-size: 100px;
+  --player-size: calc(0.8 * var(--cell-size));
+  --shift: calc((var(--cell-size) - var(--player-size)) / 2);
 
   width: calc(3 * var(--cell-size));
   border: 2px solid black;
@@ -43,12 +43,13 @@
 }
 
 
+
 .game__player--x-1 {
   left: var(--shift);
 }
 
 .game__player--x-2 {
-  left: calc(var(--shift) + var(--cell-size));
+  left: calc(var(--cell-size) + var(--shift));
 }
 
 .game__player--x-3 {
