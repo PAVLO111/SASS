@@ -1,0 +1,69 @@
+$cell-size: 30px;
+$player-size: 0.8 * $cell-size;
+$shift: ($cell-size - $player-size) / 2;
+
+
+.game {
+  width: 3 * $cell-size;
+  border: 2px solid black;
+  position: relative;
+
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__cell {
+    box-sizing: border-box;
+    width:$cell-size;
+    height: $cell-size;
+    border: 0.5px dashed black;
+  }
+  
+  &__player {
+    height: $player-size;
+    width: $player-size;
+    background-color: #231d1d;
+    border-radius: 50%;
+    position: absolute;
+
+    &--red {
+      background-color: red;
+    }
+    &--green {
+      background-color: rgb(13, 155, 27);
+    }
+    &--blue {
+      background-color: rgb(25, 22, 207);
+    }
+    
+    &--x-1 {
+      left: $shift;
+    }
+    &--x-2 {
+      left: $cell-size + $shift;
+    }
+    &--x-3 {
+      left: 2 * $cell-size + $shift;
+    }
+    
+    &--y-1 {
+      top: $shift;
+    }
+    &--y-2 {
+      top: $cell-size + $shift;
+    }
+    &--y-3 {
+      top: 2 * $cell-size + $shift;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

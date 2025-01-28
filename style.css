@@ -1,70 +1,51 @@
 .game {
-  --cell-size: 100px;
-  --player-size: calc(0.8 * var(--cell-size));
-  --shift: calc((var(--cell-size) - var(--player-size)) / 2);
-
-  width: calc(3 * var(--cell-size));
+  width: 90px;
   border: 2px solid black;
   position: relative;
 }
-
 .game__field {
   display: flex;
   flex-wrap: wrap;
 }
-
 .game__cell {
   box-sizing: border-box;
-  width: var(--cell-size);
-  height: var(--cell-size);
+  width: 30px;
+  height: 30px;
   border: 0.5px dashed black;
 }
-
 .game__player {
-  height: var(--player-size);
-  width: var(--player-size);
+  height: 24px;
+  width: 24px;
   background-color: #231d1d;
   border-radius: 50%;
-
   position: absolute;
 }
-
-
 .game__player--red {
   background-color: red;
 }
-
 .game__player--green {
   background-color: rgb(13, 155, 27);
 }
-
 .game__player--blue {
   background-color: rgb(25, 22, 207);
 }
-
-
-
 .game__player--x-1 {
-  left: var(--shift);
+  left: 3px;
 }
-
 .game__player--x-2 {
-  left: calc(var(--cell-size) + var(--shift));
+  left: 33px;
 }
-
 .game__player--x-3 {
-  left: calc(2 * var(--cell-size) + var(--shift));
+  left: 63px;
 }
-
-
 .game__player--y-1 {
-  top: var(--shift);
+  top: 3px;
 }
-
 .game__player--y-2 {
-  top: calc(var(--cell-size) + var(--shift));
+  top: 33px;
+}
+.game__player--y-3 {
+  top: 63px;
 }
 
-.game__player--y-3 {
-  top: calc(2 * var(--cell-size) + var(--shift));
-}
+/*# sourceMappingURL=style.css.map */
