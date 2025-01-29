@@ -29,15 +29,6 @@
 .game__player--blue {
   background-color: rgb(25, 22, 207);
 }
-.game__player--x-1 {
-  left: 3px;
-}
-.game__player--x-2 {
-  left: 33px;
-}
-.game__player--x-3 {
-  left: 63px;
-}
 .game__player--y-1 {
   top: 3px;
 }
@@ -46,6 +37,21 @@
 }
 .game__player--y-3 {
   top: 63px;
+}
+.game__player--y-4 {
+  top: 93px;
+}
+.game__player--y-5 {
+  top: 123px;
+}
+.game__player--x-1 {
+  left: 3px;
+}
+.game__player--x-2 {
+  left: 33px;
+}
+.game__player--x-3 {
+  left: 63px;
 }
 
 /*# sourceMappingURL=style.css.map */
